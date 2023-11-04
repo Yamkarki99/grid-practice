@@ -1,0 +1,125 @@
+.wrapper {
+  background-color: skyblue;
+  display: grid;
+  border-radius: 50%;
+  text-align: center;
+
+  border: solid 1px black;
+  grid-template-areas:
+    " i1 i2 i3"
+    "i4 i5 i6"
+    "i7 i8 i9"
+    "i10 i11 i11"
+    "i12 i12 i12";
+  padding: 10px;
+  margin: 20px;
+  min-height: 50vh;
+  gap: 1vh;
+}
+.wrapper > div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.class-item-1 {
+  grid-area: i1;
+  animation: circlee 5s infinite;
+  background: blue;
+}
+.class-item-2 {
+  grid-area: i2;
+  background: red;
+  animation: circlee 5s infinite;
+}
+.class-item-3 {
+  grid-area: i3;
+  animation: circlee 5s infinite;
+  background: blue;
+}
+.class-item-4 {
+  grid-area: i4;
+  animation: circlee 5s infinite;
+  background: grey;
+}
+.class-item-5 {
+  grid-area: i5;
+  animation: circlee 5s infinite;
+  background: black;
+}
+.class-item-6 {
+  grid-area: i6;
+  animation: circlee 5s infinite;
+  background: blue;
+}
+.class-item-7 {
+  grid-area: i7;
+  animation: circlee 5s infinite;
+  background: blue;
+}
+.class-item-8 {
+  grid-area: i8;
+  animation: circlee 5s infinite;
+  background: blue;
+}
+.class-item-9 {
+  grid-area: i9;
+  animation: circlee 5s infinite;
+  background: blue;
+}
+.class-item-10 {
+  grid-area: i10;
+  animation: circlee 5s infinite;
+  background: yellow;
+}
+.class-item-11 {
+  grid-area: i11;
+  animation: circlee 5s infinite;
+  background: white;
+}
+.class-item-12 {
+  grid-area: i12;
+  animation: circlee 5s infinite;
+  background: purple;
+}
+
+.system {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  background-color: skyblue;
+  padding: 30px;
+  border-radius: 30%;
+}
+.circle {
+  width: auto;
+  height: 100px;
+  border: double 10px Red;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  border-radius: 50%;
+  animation: circlee 5s infinite;
+  position: relative;
+  background: brown;
+}
+.circle:hover {
+  transform: scale(1.9);
+}
+@keyframes circlee {
+  0% {
+    transform: translateX(30px) translateY(-200px) rotate(90deg);
+  }
+  25% {
+    transform: translateX(90px) translateY(20vh) rotate(180deg);
+  }
+  50% {
+    transform: translateX(150px) translateY(60px) rotate(200deg);
+  }
+  75% {
+    transform: translateX(180px) translateY(-200px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(30px) translateY(20px) rotate(360deg);
+  }
+}
